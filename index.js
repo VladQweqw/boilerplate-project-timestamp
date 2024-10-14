@@ -33,7 +33,7 @@ app.get('/api/', function(req, res) {
     })
 })
 
-app.get("/api/:date", function(req, res) {
+app.get("/api/:date?", function(req, res) {
   let date_string = req.params.date;
   
   if(date_string.length === 0) {
